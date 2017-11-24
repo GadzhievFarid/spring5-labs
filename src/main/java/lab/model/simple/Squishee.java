@@ -6,6 +6,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Squishee implements Drink {
+class Squishee implements Drink {
+
     private String name;
 }
