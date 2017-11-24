@@ -6,6 +6,7 @@ import java.util.List;
 
 @Data
 public class UsualPerson implements Person {
+
     private int id;
 
     private String name;
