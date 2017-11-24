@@ -1,21 +1,23 @@
-package lab.model;
+package lab.model.simple;
 
-import lombok.Data;
+import lab.model.Person;
+import lombok.Value;
 
 import java.util.List;
 
-@Data
+@Value
 public class UsualPerson implements Person {
 
     private int id;
 
     private String name;
 
-    private Country country;
-
     private int age;
     private float height;
     private boolean isProgrammer;
+    private boolean broke;
+
+    private SimpleCountry country;
 
     private List<String> contacts;
 }
