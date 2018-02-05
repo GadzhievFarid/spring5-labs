@@ -1,6 +1,6 @@
 package ioc;
 
-import lab.model.Person;
+import lab.model.ioc.Person;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

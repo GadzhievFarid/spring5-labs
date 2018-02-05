@@ -1,5 +1,6 @@
-package lab.model;
+package lab.model.aop;
 
+import lab.model.ioc.Person;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

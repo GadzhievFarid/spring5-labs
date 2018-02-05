@@ -1,4 +1,4 @@
-package lab.model;
+package lab.model.aop;
 
 public class ApuBar implements Bar {
 

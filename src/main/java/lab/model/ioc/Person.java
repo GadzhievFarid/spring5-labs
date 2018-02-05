@@ -1,4 +1,4 @@
-package lab.model;
+package lab.model.ioc;
 
 public interface Person {
     Person setName(String name);

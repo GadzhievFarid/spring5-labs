@@ -1,9 +1,8 @@
 package aop;
 
-import lab.model.ApuBar;
-import lab.model.Bar;
-import lab.model.Customer;
-
+import lab.model.aop.ApuBar;
+import lab.model.aop.Bar;
+import lab.model.aop.Customer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,7 +20,7 @@ class AopAspectJTest {
 
 	@Autowired
     private Bar bar;
-    
+
 	@Autowired
     private Customer customer;
 
@@ -34,13 +33,13 @@ class AopAspectJTest {
 
     @Test
     void testBeforeAdvice() {
-        assertTrue("Before advice is not good enought...", sout.contains("Hello"));
-        assertTrue("Before advice is not good enought...", sout.contains("How are you doing?"));
+        assertTrue("Before advice is not good enough...", sout.contains("Hello"));
+        assertTrue("Before advice is not good enough...", sout.contains("How are you doing?"));
     }
 
     @Test
     void testAfterAdvice() {
-        assertTrue("After advice is not good enought...", sout.contains("Good Bye!"));
+        assertTrue("After advice is not good enough...", sout.contains("Good Bye!"));
     }
 
     @Test
@@ -50,8 +49,8 @@ class AopAspectJTest {
 
     @Test
     void testAroundAdvice() {
-        assertTrue("Around advice is not good enought...", sout.contains("Hi!"));
-        assertTrue("Around advice is not good enought...", sout.contains("See you!"));
+        assertTrue("Around advice is not good enough...", sout.contains("Hi!"));
+        assertTrue("Around advice is not good enough...", sout.contains("See you!"));
     }
 
     @Test

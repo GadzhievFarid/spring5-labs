@@ -1,8 +1,8 @@
 package ioc;
 
-import lab.model.Country;
-import lab.model.Person;
-import lab.model.UsualPerson;
+import lab.model.ioc.Country;
+import lab.model.ioc.Person;
+import lab.model.ioc.UsualPerson;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

@@ -1,4 +1,4 @@
-package lab.model;
+package lab.model.aop;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

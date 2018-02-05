@@ -1,4 +1,4 @@
-package lab.model;
+package lab.model.aop;
 
 @FunctionalInterface
 public interface Bar {
