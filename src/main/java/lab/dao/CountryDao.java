@@ -33,8 +33,7 @@ public class CountryDao extends JdbcDaoSupport {
                     resultSet.getString("code_name"));
 
     public List<Country> getCountryList() {
-        // TODO: implement it
-        return null;
+        return getJdbcTemplate().query(GET_ALL_COUNTRIES_SQL, COUNTRY_ROW_MAPPER);
     }
 
     public List<Country> getCountryListStartWith(String name) {
@@ -47,7 +46,8 @@ public class CountryDao extends JdbcDaoSupport {
     }
 
     public void updateCountryName(String codeName, String newCountryName) {
-        // TODO: implement it
+        getJdbcTemplate().execute(UPDATE_COUNTRY_NAME_SQL_1 + newCountryName + "'" +
+                UPDATE_COUNTRY_NAME_SQL_2 + codeName + "'");
     }
 
     public void loadCountries() {
